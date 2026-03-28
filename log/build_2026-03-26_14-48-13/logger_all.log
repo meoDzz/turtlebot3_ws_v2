@@ -1,0 +1,842 @@
+[0.158s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.158s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff8ca0cb90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8c98fe90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8c98fe90>>, mixin_verb=('build',))
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.216s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/radxa/turtlebot3_ws'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extension 'ros'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extensions ['cmake', 'python']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extension 'cmake'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extension 'python'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extensions ['python_setup_py']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(NOTE) by extension 'python_setup_py'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'ros'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['cmake', 'python']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'cmake'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'python'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['python_setup_py']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'python_setup_py'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base_interface) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base_interface) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base_interface) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base_interface) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base_interface) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base_interface) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base_interface) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base_interface) by extension 'ros'
+[0.262s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_base_interface' with type 'ros.ament_python' and name 'robot_base_interface'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ros'
+[0.264s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ros'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['cmake', 'python']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'cmake'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'python'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['python_setup_py']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'python_setup_py'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extensions ['cmake', 'python']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extension 'cmake'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extension 'python'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extensions ['python_setup_py']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker) by extension 'python_setup_py'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extension 'ros'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extensions ['cmake', 'python']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extension 'cmake'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extension 'python'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extensions ['python_setup_py']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/humble) by extension 'python_setup_py'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extension 'ros'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extensions ['cmake', 'python']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extension 'cmake'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extension 'python'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extensions ['python_setup_py']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/docker/jazzy) by extension 'python_setup_py'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3' with type 'ros.ament_cmake' and name 'turtlebot3'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'ignore_ament_install'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['colcon_pkg']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'ros'
+[0.271s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_bringup' with type 'ros.ament_cmake' and name 'turtlebot3_bringup'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'ros'
+[0.272s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_cartographer' with type 'ros.ament_cmake' and name 'turtlebot3_cartographer'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'ros'
+[0.274s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_description' with type 'ros.ament_cmake' and name 'turtlebot3_description'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'ros'
+[0.276s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_example' with type 'ros.ament_python' and name 'turtlebot3_example'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'ignore_ament_install'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['colcon_pkg']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'colcon_pkg'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['colcon_meta']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'colcon_meta'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['ros']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'ros'
+[0.277s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_navigation2' with type 'ros.ament_cmake' and name 'turtlebot3_navigation2'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'ignore_ament_install'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'ros'
+[0.279s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_node' with type 'ros.ament_cmake' and name 'turtlebot3_node'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'colcon_pkg'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['colcon_meta']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'colcon_meta'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['ros']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'ros'
+[0.280s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_teleop' with type 'ros.ament_python' and name 'turtlebot3_teleop'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'ros'
+[0.282s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_msgs' with type 'ros.ament_cmake' and name 'turtlebot3_msgs'
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.314s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/radxa/turtlebot3_ws/install
+[0.316s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 402 installed packages in /opt/ros/jazzy
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'robot_base_interface' build argument 'cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'robot_base_interface' build argument 'cmake_target' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'robot_base_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'robot_base_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'robot_base_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'robot_base_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'robot_base_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'robot_base_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'robot_base_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.395s] DEBUG:colcon.colcon_core.verb:Building package 'robot_base_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/radxa/turtlebot3_ws/build/robot_base_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/radxa/turtlebot3_ws/install/robot_base_interface', 'merge_install': False, 'path': '/home/radxa/turtlebot3_ws/src/robot_base_interface', 'symlink_install': True, 'test_result_base': None}
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.396s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/radxa/turtlebot3_ws/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/radxa/turtlebot3_ws/install/rplidar_ros', 'merge_install': False, 'path': '/home/radxa/turtlebot3_ws/src/rplidar_ros', 'symlink_install': True, 'test_result_base': None}
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_target' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_clean_first' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_force_configure' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'ament_cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.396s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_cartographer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/radxa/turtlebot3_ws/build/turtlebot3_cartographer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer', 'merge_install': False, 'path': '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer', 'symlink_install': True, 'test_result_base': None}
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_target' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.397s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/radxa/turtlebot3_ws/build/turtlebot3_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/radxa/turtlebot3_ws/install/turtlebot3_description', 'merge_install': False, 'path': '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_description', 'symlink_install': True, 'test_result_base': None}
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_target' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.397s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/radxa/turtlebot3_ws/build/turtlebot3_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs', 'merge_install': False, 'path': '/home/radxa/turtlebot3_ws/src/turtlebot3_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_target' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_clean_first' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_force_configure' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'ament_cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.398s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_navigation2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/radxa/turtlebot3_ws/build/turtlebot3_navigation2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2', 'merge_install': False, 'path': '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_navigation2', 'symlink_install': True, 'test_result_base': None}
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_target' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.399s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/radxa/turtlebot3_ws/build/turtlebot3_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop', 'merge_install': False, 'path': '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop', 'symlink_install': True, 'test_result_base': None}
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_target' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.399s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/radxa/turtlebot3_ws/build/turtlebot3_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/radxa/turtlebot3_ws/install/turtlebot3_example', 'merge_install': False, 'path': '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_example', 'symlink_install': True, 'test_result_base': None}
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_target' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.400s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/radxa/turtlebot3_ws/build/turtlebot3_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/radxa/turtlebot3_ws/install/turtlebot3_node', 'merge_install': False, 'path': '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_node', 'symlink_install': True, 'test_result_base': None}
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_target' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.401s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/radxa/turtlebot3_ws/build/turtlebot3_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup', 'merge_install': False, 'path': '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_target' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_clean_cache' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_clean_first' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_force_configure' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'ament_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'catkin_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.401s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/radxa/turtlebot3_ws/build/turtlebot3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/radxa/turtlebot3_ws/install/turtlebot3', 'merge_install': False, 'path': '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3', 'symlink_install': True, 'test_result_base': None}
+[0.401s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.403s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.404s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/radxa/turtlebot3_ws/src/turtlebot3_msgs' with build type 'ament_cmake'
+[0.404s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/radxa/turtlebot3_ws/src/turtlebot3_msgs'
+[0.407s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.407s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.407s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.414s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_description' with build type 'ament_cmake'
+[0.414s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_description'
+[0.414s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.414s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.421s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer' with build type 'ament_cmake'
+[0.422s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer'
+[0.422s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.422s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.429s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_navigation2' with build type 'ament_cmake'
+[0.429s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_navigation2'
+[0.430s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.430s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.435s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop' with build type 'ament_python'
+[0.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_teleop', 'ament_prefix_path')
+[0.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/ament_prefix_path.ps1'
+[0.437s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/ament_prefix_path.dsv'
+[0.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/ament_prefix_path.sh'
+[0.439s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.439s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.444s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/radxa/turtlebot3_ws/src/robot_base_interface' with build type 'ament_python'
+[0.444s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_base_interface', 'ament_prefix_path')
+[0.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/robot_base_interface/share/robot_base_interface/hook/ament_prefix_path.ps1'
+[0.445s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/robot_base_interface/share/robot_base_interface/hook/ament_prefix_path.dsv'
+[0.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/robot_base_interface/share/robot_base_interface/hook/ament_prefix_path.sh'
+[0.448s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.448s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.454s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/radxa/turtlebot3_ws/src/rplidar_ros' with build type 'ament_cmake'
+[0.454s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/radxa/turtlebot3_ws/src/rplidar_ros'
+[0.454s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.454s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_msgs -- -j8 -l8
+[0.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_description -- -j8 -l8
+[0.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_cartographer -- -j8 -l8
+[0.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_navigation2 -- -j8 -l8
+[0.864s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop'
+[0.864s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.864s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.266s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/radxa/turtlebot3_ws/src/robot_base_interface'
+[1.266s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.266s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_description -- -j8 -l8
+[1.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_description
+[1.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_cartographer -- -j8 -l8
+[1.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_cartographer
+[1.307s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_navigation2 -- -j8 -l8
+[1.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_navigation2
+[1.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/rplidar_ros -- -j8 -l8
+[1.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_msgs -- -j8 -l8
+[1.333s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_msgs
+[1.370s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_cartographer)
+[1.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_cartographer
+[1.386s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer' for CMake module files
+[1.392s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer' for CMake config files
+[1.393s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_cartographer', 'cmake_prefix_path')
+[1.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.ps1'
+[1.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.dsv'
+[1.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.sh'
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/bin'
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/lib/pkgconfig/turtlebot3_cartographer.pc'
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/lib/python3.12/site-packages'
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/bin'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.ps1'
+[1.412s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv'
+[1.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.sh'
+[1.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.bash'
+[1.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.zsh'
+[1.424s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/colcon-core/packages/turtlebot3_cartographer)
+[1.426s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_cartographer)
+[1.427s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer' for CMake module files
+[1.427s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer' for CMake config files
+[1.428s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_cartographer', 'cmake_prefix_path')
+[1.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.ps1'
+[1.432s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.dsv'
+[1.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.sh'
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/bin'
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/lib/pkgconfig/turtlebot3_cartographer.pc'
+[1.437s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/lib/python3.12/site-packages'
+[1.437s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/bin'
+[1.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.ps1'
+[1.440s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv'
+[1.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.sh'
+[1.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.bash'
+[1.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.zsh'
+[1.450s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer/share/colcon-core/packages/turtlebot3_cartographer)
+[1.453s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_navigation2)
+[1.453s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2' for CMake module files
+[1.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_navigation2
+[1.459s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2' for CMake config files
+[1.460s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation2', 'cmake_prefix_path')
+[1.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.ps1'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.dsv'
+[1.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.sh'
+[1.469s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/bin'
+[1.470s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/lib/pkgconfig/turtlebot3_navigation2.pc'
+[1.470s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/lib/python3.12/site-packages'
+[1.471s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/bin'
+[1.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.ps1'
+[1.473s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv'
+[1.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.sh'
+[1.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.bash'
+[1.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.zsh'
+[1.481s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/colcon-core/packages/turtlebot3_navigation2)
+[1.483s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_navigation2)
+[1.483s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2' for CMake module files
+[1.484s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2' for CMake config files
+[1.484s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation2', 'cmake_prefix_path')
+[1.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.ps1'
+[1.487s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.dsv'
+[1.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.sh'
+[1.490s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/bin'
+[1.490s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/lib/pkgconfig/turtlebot3_navigation2.pc'
+[1.491s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/lib/python3.12/site-packages'
+[1.491s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/bin'
+[1.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.ps1'
+[1.493s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv'
+[1.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.sh'
+[1.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.bash'
+[1.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.zsh'
+[1.501s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2/share/colcon-core/packages/turtlebot3_navigation2)
+[1.504s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_description)
+[1.504s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description' for CMake module files
+[1.506s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_description
+[1.506s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description' for CMake config files
+[1.507s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_description', 'cmake_prefix_path')
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.ps1'
+[1.508s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.dsv'
+[1.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.sh'
+[1.512s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description/bin'
+[1.512s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description/lib/pkgconfig/turtlebot3_description.pc'
+[1.513s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description/lib/python3.12/site-packages'
+[1.513s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description/bin'
+[1.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.ps1'
+[1.515s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.dsv'
+[1.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.sh'
+[1.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.bash'
+[1.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.zsh'
+[1.519s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/colcon-core/packages/turtlebot3_description)
+[1.521s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_description)
+[1.521s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description' for CMake module files
+[1.522s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description' for CMake config files
+[1.522s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_description', 'cmake_prefix_path')
+[1.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.ps1'
+[1.523s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.dsv'
+[1.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.sh'
+[1.529s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description/bin'
+[1.530s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description/lib/pkgconfig/turtlebot3_description.pc'
+[1.531s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description/lib/python3.12/site-packages'
+[1.533s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_description/bin'
+[1.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.ps1'
+[1.538s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.dsv'
+[1.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.sh'
+[1.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.bash'
+[1.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.zsh'
+[1.554s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_description/share/colcon-core/packages/turtlebot3_description)
+[1.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/rplidar_ros -- -j8 -l8
+[1.609s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/rplidar_ros
+[1.664s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_msgs)
+[1.666s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs' for CMake module files
+[1.670s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs' for CMake config files
+[1.676s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'cmake_prefix_path')
+[1.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_msgs
+[1.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.ps1'
+[1.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.dsv'
+[1.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.sh'
+[1.679s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib'
+[1.679s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'ld_library_path_lib')
+[1.680s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.ps1'
+[1.681s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.dsv'
+[1.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.sh'
+[1.684s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/bin'
+[1.684s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/pkgconfig/turtlebot3_msgs.pc'
+[1.685s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages'
+[1.686s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'pythonpath')
+[1.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.ps1'
+[1.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.dsv'
+[1.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.sh'
+[1.692s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/bin'
+[1.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.ps1'
+[1.695s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.dsv'
+[1.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.sh'
+[1.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.bash'
+[1.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.zsh'
+[1.726s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/colcon-core/packages/turtlebot3_msgs)
+[1.728s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_msgs)
+[1.728s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs' for CMake module files
+[1.730s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs' for CMake config files
+[1.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'cmake_prefix_path')
+[1.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.ps1'
+[1.732s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.dsv'
+[1.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.sh'
+[1.734s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib'
+[1.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'ld_library_path_lib')
+[1.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.ps1'
+[1.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.dsv'
+[1.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.sh'
+[1.739s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/bin'
+[1.739s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/pkgconfig/turtlebot3_msgs.pc'
+[1.739s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages'
+[1.739s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'pythonpath')
+[1.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.ps1'
+[1.740s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.dsv'
+[1.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.sh'
+[1.744s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/bin'
+[1.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.ps1'
+[1.745s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.dsv'
+[1.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.sh'
+[1.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.bash'
+[1.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.zsh'
+[1.751s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/share/colcon-core/packages/turtlebot3_msgs)
+[1.753s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_node' with build type 'ament_cmake'
+[1.753s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_node'
+[1.753s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.753s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.764s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_example' with build type 'ament_python'
+[1.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_example', 'ament_prefix_path')
+[1.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/ament_prefix_path.ps1'
+[1.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/ament_prefix_path.dsv'
+[1.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/ament_prefix_path.sh'
+[1.769s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.769s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.777s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros' for CMake module files
+[1.778s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/rplidar_ros
+[1.779s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros' for CMake config files
+[1.780s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[1.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[1.781s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[1.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[1.783s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros/lib'
+[1.783s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros/bin'
+[1.783s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[1.784s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros/lib/python3.12/site-packages'
+[1.784s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros/bin'
+[1.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[1.786s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[1.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[1.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[1.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[1.790s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[1.792s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[1.793s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros' for CMake module files
+[1.793s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros' for CMake config files
+[1.794s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[1.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[1.795s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[1.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[1.799s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros/lib'
+[1.800s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros/bin'
+[1.800s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros/lib/python3.12/site-packages'
+[1.804s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/rplidar_ros/bin'
+[1.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[1.807s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[1.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[1.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[1.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[1.813s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[1.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_node -- -j8 -l8
+[2.254s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_example'
+[2.254s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.254s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_node' returned '0': CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_node -- -j8 -l8
+[2.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_node
+[2.339s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_node)
+[2.341s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node' for CMake module files
+[2.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_node' returned '0': CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_node
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node' for CMake config files
+[2.351s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_node', 'cmake_prefix_path')
+[2.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.ps1'
+[2.352s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.dsv'
+[2.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.sh'
+[2.356s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node/lib'
+[2.356s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node/bin'
+[2.356s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node/lib/pkgconfig/turtlebot3_node.pc'
+[2.356s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node/lib/python3.12/site-packages'
+[2.357s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node/bin'
+[2.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.ps1'
+[2.359s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.dsv'
+[2.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.sh'
+[2.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.bash'
+[2.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.zsh'
+[2.366s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/colcon-core/packages/turtlebot3_node)
+[2.370s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_node)
+[2.371s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node' for CMake module files
+[2.376s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node' for CMake config files
+[2.378s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_node', 'cmake_prefix_path')
+[2.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.ps1'
+[2.380s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.dsv'
+[2.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.sh'
+[2.383s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node/lib'
+[2.383s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node/bin'
+[2.383s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node/lib/pkgconfig/turtlebot3_node.pc'
+[2.384s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node/lib/python3.12/site-packages'
+[2.384s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_node/bin'
+[2.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.ps1'
+[2.386s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.dsv'
+[2.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.sh'
+[2.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.bash'
+[2.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.zsh'
+[2.391s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_node/share/colcon-core/packages/turtlebot3_node)
+[2.394s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup' with build type 'ament_cmake'
+[2.394s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup'
+[2.394s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.394s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_bringup': CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_bringup -- -j8 -l8
+[2.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_teleop': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/radxa/turtlebot3_ws/build/turtlebot3_teleop/build --no-deps symlink_data
+[2.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/robot_base_interface': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/build/robot_base_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/radxa/turtlebot3_ws/build/robot_base_interface/build --no-deps symlink_data
+[2.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_bringup' returned '0': CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3_bringup -- -j8 -l8
+[2.573s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_bringup': CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_bringup
+[2.643s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_bringup)
+[2.645s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup' for CMake module files
+[2.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_bringup' returned '0': CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3_bringup
+[2.649s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup' for CMake config files
+[2.650s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_bringup', 'cmake_prefix_path')
+[2.652s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.ps1'
+[2.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.dsv'
+[2.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.sh'
+[2.659s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/bin'
+[2.660s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/lib/pkgconfig/turtlebot3_bringup.pc'
+[2.661s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/lib/python3.12/site-packages'
+[2.663s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/bin'
+[2.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.ps1'
+[2.667s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.dsv'
+[2.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.sh'
+[2.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.bash'
+[2.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.zsh'
+[2.676s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/colcon-core/packages/turtlebot3_bringup)
+[2.679s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_bringup)
+[2.680s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup' for CMake module files
+[2.683s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup' for CMake config files
+[2.685s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_bringup', 'cmake_prefix_path')
+[2.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.ps1'
+[2.688s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.dsv'
+[2.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.sh'
+[2.694s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/bin'
+[2.695s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/lib/pkgconfig/turtlebot3_bringup.pc'
+[2.696s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/lib/python3.12/site-packages'
+[2.698s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/bin'
+[2.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.ps1'
+[2.703s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.dsv'
+[2.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.sh'
+[2.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.bash'
+[2.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.zsh'
+[2.714s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_bringup/share/colcon-core/packages/turtlebot3_bringup)
+[3.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3_example': CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/radxa/turtlebot3_ws/build/turtlebot3_example/build --no-deps symlink_data
+[3.576s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_teleop', 'pythonpath_develop')
+[3.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/build/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath_develop.ps1'
+[3.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_teleop' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/radxa/turtlebot3_ws/build/turtlebot3_teleop/build --no-deps symlink_data
+[3.579s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/build/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath_develop.dsv'
+[3.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/build/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath_develop.sh'
+[3.581s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop' for CMake module files
+[3.582s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop' for CMake config files
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib'
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/bin'
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/pkgconfig/turtlebot3_teleop.pc'
+[3.584s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages'
+[3.584s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_teleop', 'pythonpath')
+[3.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath.ps1'
+[3.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath.dsv'
+[3.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath.sh'
+[3.588s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/bin'
+[3.588s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_teleop)
+[3.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/package.ps1'
+[3.590s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/package.dsv'
+[3.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/package.sh'
+[3.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/package.bash'
+[3.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/package.zsh'
+[3.595s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/share/colcon-core/packages/turtlebot3_teleop)
+[3.699s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_base_interface', 'pythonpath_develop')
+[3.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/build/robot_base_interface/share/robot_base_interface/hook/pythonpath_develop.ps1'
+[3.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/robot_base_interface' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/build/robot_base_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/radxa/turtlebot3_ws/build/robot_base_interface/build --no-deps symlink_data
+[3.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/build/robot_base_interface/share/robot_base_interface/hook/pythonpath_develop.dsv'
+[3.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/build/robot_base_interface/share/robot_base_interface/hook/pythonpath_develop.sh'
+[3.704s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/robot_base_interface' for CMake module files
+[3.705s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/robot_base_interface' for CMake config files
+[3.706s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/robot_base_interface/lib'
+[3.706s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/robot_base_interface/bin'
+[3.706s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/pkgconfig/robot_base_interface.pc'
+[3.706s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages'
+[3.706s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_base_interface', 'pythonpath')
+[3.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/robot_base_interface/share/robot_base_interface/hook/pythonpath.ps1'
+[3.707s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/robot_base_interface/share/robot_base_interface/hook/pythonpath.dsv'
+[3.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/robot_base_interface/share/robot_base_interface/hook/pythonpath.sh'
+[3.709s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/robot_base_interface/bin'
+[3.709s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_base_interface)
+[3.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/robot_base_interface/share/robot_base_interface/package.ps1'
+[3.711s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/robot_base_interface/share/robot_base_interface/package.dsv'
+[3.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/robot_base_interface/share/robot_base_interface/package.sh'
+[3.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/robot_base_interface/share/robot_base_interface/package.bash'
+[3.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/robot_base_interface/share/robot_base_interface/package.zsh'
+[3.716s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/robot_base_interface/share/colcon-core/packages/robot_base_interface)
+[4.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_example', 'pythonpath_develop')
+[4.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/build/turtlebot3_example/share/turtlebot3_example/hook/pythonpath_develop.ps1'
+[4.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3_example' returned '0': CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/radxa/turtlebot3_ws/build/turtlebot3_example/build --no-deps symlink_data
+[4.463s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/build/turtlebot3_example/share/turtlebot3_example/hook/pythonpath_develop.dsv'
+[4.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/build/turtlebot3_example/share/turtlebot3_example/hook/pythonpath_develop.sh'
+[4.472s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_example' for CMake module files
+[4.475s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_example' for CMake config files
+[4.478s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib'
+[4.478s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_example/bin'
+[4.479s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/pkgconfig/turtlebot3_example.pc'
+[4.480s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages'
+[4.481s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_example', 'pythonpath')
+[4.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/pythonpath.ps1'
+[4.484s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/pythonpath.dsv'
+[4.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/pythonpath.sh'
+[4.491s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3_example/bin'
+[4.492s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_example)
+[4.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/package.ps1'
+[4.497s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/package.dsv'
+[4.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/package.sh'
+[4.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/package.bash'
+[4.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/package.zsh'
+[4.506s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3_example/share/colcon-core/packages/turtlebot3_example)
+[4.508s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3' with build type 'ament_cmake'
+[4.508s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3'
+[4.509s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.510s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3': AMENT_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3 -- -j8 -l8
+[4.626s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3' returned '0': AMENT_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/radxa/turtlebot3_ws/build/turtlebot3 -- -j8 -l8
+[4.631s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/radxa/turtlebot3_ws/build/turtlebot3': AMENT_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3
+[4.663s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3)
+[4.664s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3' for CMake module files
+[4.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/radxa/turtlebot3_ws/build/turtlebot3' returned '0': AMENT_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/rplidar_ros:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/radxa/turtlebot3_ws/install/turtlebot3_bringup:/home/radxa/turtlebot3_ws/install/turtlebot3_node:/home/radxa/turtlebot3_ws/install/turtlebot3_navigation2:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs:/home/radxa/turtlebot3_ws/install/turtlebot3_description:/home/radxa/turtlebot3_ws/install/turtlebot3_cartographer:/home/radxa/turtlebot3_ws/install/turtlebot3:/home/radxa/turtlebot3_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_example:/home/radxa/turtlebot3_ws/install/robot_base_interface:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/radxa/turtlebot3_ws/build/turtlebot3_example:/home/radxa/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/turtlebot3_teleop:/home/radxa/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/radxa/turtlebot3_ws/build/robot_base_interface:/home/radxa/turtlebot3_ws/install/robot_base_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/radxa/turtlebot3_ws/build/turtlebot3
+[4.669s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3' for CMake config files
+[4.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3', 'cmake_prefix_path')
+[4.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.ps1'
+[4.673s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.dsv'
+[4.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.sh'
+[4.677s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3/bin'
+[4.678s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3/lib/pkgconfig/turtlebot3.pc'
+[4.679s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3/lib/python3.12/site-packages'
+[4.681s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3/bin'
+[4.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.ps1'
+[4.685s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.dsv'
+[4.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.sh'
+[4.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.bash'
+[4.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.zsh'
+[4.691s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3/share/colcon-core/packages/turtlebot3)
+[4.694s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3)
+[4.695s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3' for CMake module files
+[4.697s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3' for CMake config files
+[4.699s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3', 'cmake_prefix_path')
+[4.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.ps1'
+[4.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.dsv'
+[4.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.sh'
+[4.706s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3/bin'
+[4.707s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3/lib/pkgconfig/turtlebot3.pc'
+[4.708s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3/lib/python3.12/site-packages'
+[4.710s] Level 1:colcon.colcon_core.environment:checking '/home/radxa/turtlebot3_ws/install/turtlebot3/bin'
+[4.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.ps1'
+[4.714s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.dsv'
+[4.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.sh'
+[4.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.bash'
+[4.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/radxa/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.zsh'
+[4.721s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/radxa/turtlebot3_ws/install/turtlebot3/share/colcon-core/packages/turtlebot3)
+[4.722s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.725s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.726s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.726s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.758s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.759s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.759s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.759s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.833s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.834s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/radxa/turtlebot3_ws/install/local_setup.ps1'
+[4.835s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/radxa/turtlebot3_ws/install/_local_setup_util_ps1.py'
+[4.836s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/radxa/turtlebot3_ws/install/setup.ps1'
+[4.838s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/radxa/turtlebot3_ws/install/local_setup.sh'
+[4.839s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/radxa/turtlebot3_ws/install/_local_setup_util_sh.py'
+[4.842s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/radxa/turtlebot3_ws/install/setup.sh'
+[4.850s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/radxa/turtlebot3_ws/install/local_setup.bash'
+[4.852s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/radxa/turtlebot3_ws/install/setup.bash'
+[4.859s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/radxa/turtlebot3_ws/install/local_setup.zsh'
+[4.861s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/radxa/turtlebot3_ws/install/setup.zsh'

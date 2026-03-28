@@ -1,0 +1,108 @@
+
+sửa file .lua
+```
+  map_frame = "map",
+  tracking_frame = "base_link",               -- Đổi thành "base_link" nếu KHÔNG có IMU ổn định
+  published_frame = "base_link",             -- Frame chính publish pose (thay nếu cần)
+  odom_frame = "odom",                       -- Chỉ dùng nếu provide_odom_frame = true
+  provide_odom_frame = true,                -- Tắt vì không có odom thật
+  publish_frame_projected_to_2d = true,      -- Rất quan trọng cho 2D handheld
+  use_odometry = false,  
+```
+Cách build lại bằng symlink mềm
+source /opt/ros/jazzy/setup.bash
+cd ~/turtlebot3_ws
+colcon build --symlink-install 
+source install/setup.bash
+
+# Trong file cartographer.launch.py
+
+# Chỗ 1: Node cartographer_node (để nó không phát bản đồ đè lên map cũ)
+cartographer_node = Node(
+    package='cartographer_ros',
+    executable='cartographer_node',
+    # ... các dòng khác giữ nguyên ...
+    remappings=[('map', 'map_live')] 
+)
+
+# Chỗ 2: Node occupancy_grid_node (đây mới là node tạo ra cái hình ảnh bản đồ đen trắng)
+occupancy_grid_node = Node(
+    package='cartographer_ros',
+    executable='occupancy_grid_node',
+    # ... các dòng khác giữ nguyên ...
+    remappings=[('map', 'map_live')]
+)
+ 
+# Lưu map mới
+
+```
+ros2 run nav2_map_server map_saver_cli -f /home/radxa/turtlebot3_ws/map/map_2.yaml
+```
+
+########################
+# Run bring up devices
+
+```
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_bringup robot.launch.py
+```
+ 
+# Odom carto
+```
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=False
+```
+
+# Launch Navigation
+```
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=False map:=/home/radxa/turtlebot3_ws/map/map_2.yaml
+```
+
+# Run sending velocity to ESP
+```bash
+cd /home/radxa/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup/launch
+```
+run file *sub_velocity.py*
+```bash
+python3 sub_velocity.py
+```
+# Read the cmd_vel
+```
+ros2 topic echo /cmd_vel
+```
+
+############################
+File python khong chay cung ROS2 ->>>> them nay vao
+
+
+from rclpy.qos import QoSProfile, ReliabilityPolicy
+
+qos_profile = QoSProfile(reliability=ReliabilityPolicy.BEST_EFFORT, depth=10)
+######
+
+
+# Set the init pose
+```bash
+ros2 run robot_base_interface set_init_pose
+```
+
+# Set the goal pose
+```bash
+ros2 run robot_base_interface send_goal
+```
+
+# Check click point on map
+```bash
+ros2 topic echo /clicked_point
+```
+## Control_remote
+export TURTLEBOT3_MODEL=burger
+ros2 run turtlebot3_teleop teleop_keyboard
+
+
+
+
+
+
+
